@@ -18,13 +18,13 @@
 ## Ornementation / Information
 
 
-![Exemple: Un graphique de données](../img/charts.svg)
+![Exemple: Un graphique de données](img/charts.svg)
 
 
-![Exemple: les pictogramme de succès/erreur](../img/checklist.png)
+![Exemple: les pictogramme de succès/erreur](img/checklist.png)
 
 
-![Exemple: Les emoticons](../img/emoji.png)
+![Exemple: Les emoticons](img/emoji.png)
 
 ---
 
@@ -150,7 +150,7 @@ Note:
 - `a[role=link]`
 
 
-![Exemple: Un graphique de données](../img/charts.svg)
+![Exemple: Un graphique de données](img/charts.svg)
 
 
 <!-- .slide: data-background-image="img/bg/code.jpg" -->
@@ -209,7 +209,7 @@ Note:
 <!-- .slide: data-background-image="img/bg/map.jpg" -->
 ## Level 🐲: SVG
 
-<iframe src="../img/charts.svg" style="width:570px; height:700px; background: white"></iframe>
+<iframe src="img/charts.svg" style="width:570px; height:700px; background: white"></iframe>
 
 
 <!-- .slide: data-background-image="img/bg/code.jpg" -->
@@ -266,7 +266,7 @@ Note:
 <!-- .slide: data-background-image="img/bg/map.jpg" -->
 ## Level 🐲: SVG
 
-<iframe src="../img/charts.svg" style="width:570px; height:700px; background: white"></iframe>
+<iframe src="img/charts.svg" style="width:570px; height:700px; background: white"></iframe>
 
 ---
 
