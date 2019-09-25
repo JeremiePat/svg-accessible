@@ -1,0 +1,135 @@
+<svg viewBox="0 0 440 540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title" aria-discribedby="description" lang="en" xml:lang="en">
+  <desc id="description">This chart represent the incomes for the year 2017, both in absolute value and percentage of the total incomes. The total incomes are $18.3 millions and they are split as follow: $5.4 millions for the first quarter (29%), $3.4 millions for the second quarter (19%), $8.3 millions for the third quarter (45%), $1.2 millions for the fourth quarter (7%).</desc>
+
+  <style>
+    text {
+      font: 13px "OpenSans-Extrabold", "Open Sans", sans-serif;
+      font-weight: 700;
+      text-anchor: middle;
+    }
+
+    .fillBlack { fill: black; }
+    .strokeBlack { fill: none; stroke: black; stroke-linecap: round; }
+    .strokeBill { fill: none; stroke: #EE6666; stroke-width: 7px; stroke-linejoin: round }
+    .fillBill { fill: #EE6666; }
+    #Q1 { fill: #00DDFF; mask:url(#Q1MASK); cursor:pointer; }
+    #Q2 { fill: #00EEDD; mask:url(#Q2MASK); cursor:pointer; }
+    #Q3 { fill: #FFDD77; mask:url(#Q3MASK); cursor:pointer; }
+    #Q4 { fill: #EE8877; mask:url(#Q4MASK); cursor:pointer; }
+
+    g:focus #Q1, g:focus #Q2, g:focus #Q3, g:focus #Q4 { stroke: black; stroke-width: 14px; outline: none; }
+
+    g:focus { outline: none; }
+    g:focus:nth-child(5) { outline: 1px dotted black; }
+
+  </style>
+
+  <g>
+    <rect fill="#EE6666" x="10" y="10" width="420" height="30"></rect>
+    <text id="title" x="220" y="30" font-size="16" fill="#FFFFFF">
+      TOTAL REVENU PER QUARTER 2017 (%)
+    </text>
+  </g>
+
+  <g id="data">
+    <g tabindex="0" arial-labelledby="Q1TXT">
+      <text aria-hidden="true">
+        <tspan x="375" y="91">1ST QUARTER</tspan>
+        <tspan x="375" y="109" fill="#EE6666">$5.4M (29%)</tspan>
+      </text>
+
+      <use id="Q1" xlink:href="#Q1SHAPE">
+        <title id="Q1TXT">First Quarter: $5.4M (29%)</title>
+      </use>
+    </g>
+
+    <g tabindex="0" arial-labelledby="Q2TXT">
+      <text aria-hidden="true">
+        <tspan x="365" y="504">2ND QUARTER</tspan>
+        <tspan x="365" y="522" fill="#EE6666">$3.4M (19%)</tspan>
+      </text>
+
+      <use id="Q2" xlink:href="#Q2SHAPE">
+        <title id="Q2TXT">Second Quarter: $3.4M (19%)</title>
+      </use>
+    </g>
+
+    <g tabindex="0" arial-labelledby="Q3TXT">
+      <text aria-hidden="true">
+        <tspan x="85" y="497">3RD QUARTER</tspan>
+        <tspan x="85" y="515" fill="#EE6666">$8.3M (45%)</tspan>
+      </text>
+
+      <use id="Q3" xlink:href="#Q3SHAPE">
+        <title id="Q3TXT">Third Quarter: $8.3M (45%)</title>
+      </use>
+    </g>
+
+    <g tabindex="0" arial-labelledby="Q4TXT">
+      <text aria-hidden="true">
+        <tspan x="105" y="78">4TH QUARTER</tspan>
+        <tspan x="105" y="96" fill="#EE6666">$1.2M (7%)</tspan>
+      </text>
+
+      <use id="Q4" xlink:href="#Q4SHAPE">
+        <title id="Q4TXT">Third Quarter: $8.3M (45%)</title>
+      </use>
+    </g>
+
+    <g tabindex="0">
+      <text font-size="14">
+        <tspan x="220" y="340">REVENUE TOTAL</tspan>
+        <tspan x="218" y="365" font-size="28" fill="#EE6666">$18.3M</tspan>
+      </text>
+    </g>
+  </g>
+
+  <g id="graphics">
+    <g id="bill" transform="translate(164.304087, 201.837752)">
+      <path class="strokeBill" d="M9.95,31.35 C20.1,27 30.35,25.36 40.7,26.21 C55.53,27.44 65.12,34.96 78.28,34.96 C85.87,34.96 94.76,33.76 104.95,31.35 L101.94,84.74 C92,88 83,89.7 74.94,89.7 C60,89.7 54.2,83.37 38.1,81.46 C31.86,80.72 21.83,82.24 8,86 L9.95,31.35 Z" transform="translate(56.48, 57.85) rotate(-47) translate(-56.48, -57.85) " />
+      <path class="fillBill" d="M62.95,49 C62.95,48.46 63.21,47.9 63.74,47.41 C63.27,46.32 62.2,45.69 60.53,45.52 L60.53,53.88 L61,54 C61.95,54.24 62.87,54.49 63.78,54.76 C64.69,55 65.35,55.26 65.76,55.46 C66.2,55.69 66.65,56 67.1,56.41 C67.56,56.8 67.98,57.25 68.36,57.75 C69.33,58.98 69.81,60.45 69.81,62.15 C69.81,63.73 69.36,65.22 68.47,66.61 C67.57,68 66.38,69 64.88,69.72 C64.32,70 63.67,70.27 62.92,70.5 C62.17,70.74 61.37,70.95 60.53,71.12 L60.53,74.2 C60.53,75.32 59.88,75.88 58.59,75.88 C57.33,75.88 56.7,75.32 56.7,74.2 L56.7,71.17 C53.59,70.87 51.16,70 49.42,68.64 C47.67,67.24 46.8,65.42 46.8,63.16 C46.8,61.84 47.14,60.78 47.83,59.97 C48.52,59.16 49.44,58.76 50.58,58.76 C51.37,58.76 52,59 52.63,59.55 C53.2,60.1 53.48,60.73 53.48,61.49 C53.48,62.19 53.33,62.74 53,63.14 C52.71,63.53 52.18,63.8 51.43,63.95 C51.68,64.92 52.26,65.68 53.15,66.24 C54,66.8 55.23,67.13 56.7,67.25 L56.7,57.62 C55.46,57.26 54.43,56.95 53.59,56.69 C52.76,56.43 52.18,56.22 51.86,56 C51.33,55.84 50.82,55.53 50.34,55.15 C49.85,54.77 49.47,54.37 49.17,53.96 C48.44,52.88 48,51.6 48,50.1 C48,49.3 48.19,48.53 48.42,47.78 C48.66,47 49,46.34 49.42,45.69 C49.84,45 50.35,44.47 50.95,43.95 C51.56,43.44 52.2,43 52.9,42.7 C53.4,42.47 53.98,42.26 54.63,42.08 C55.27,41.9 55.96,41.75 56.7,41.6 L56.7,38.74 C56.7,37.48 57.33,36.85 58.59,36.85 C59.88,36.85 60.53,37.48 60.53,38.74 L60.53,41.6 C63,41.98 65,42.78 66.55,44 C68,45.22 68.8,46.67 68.8,48.38 C68.8,49.28 68.5,50 67.92,50.64 C67.33,51.24 66.6,51.5 65.72,51.54 C64.93,51.54 64.27,51.31 63.74,50.82 C63.21,50.33 62.95,49.75 62.95,49 Z M52.78,49.43 C52.78,50.37 53.1,51.1 53.68,51.61 C54.28,52.12 55.29,52.59 56.7,53 L56.7,45.52 C55.46,45.69 54.5,46.13 53.81,46.83 C53.12,47.54 52.78,48.4 52.78,49.43 Z M65,62.59 C65,61.38 64.7,60.46 64,59.82 C63.3,59.17 62.14,58.7 60.53,58.41 L60.53,67.21 C61.14,67.15 61.69,67 62.17,66.77 C62.66,66.53 63.14,66.23 63.6,65.84 C64.57,65 65,63.94 65,62.59 Z" transform="translate(58.303952, 56.362993) rotate(-42) translate(-58.303952, -56.362993) " />
+    </g>
+    <g id="connector-4">
+      <circle class="fillBlack" cx="158.5" cy="84.5" r="4.5" />
+      <path class="strokeBlack" d="M158.5,84.79 182.43,108.5 182.43,117" />
+    </g>
+    <g id="connector-3">
+      <circle class="fillBlack" cx="94.85" cy="472.5" r="4.5" />
+      <path class="strokeBlack" d="M96.5,470.79 118,448.79 118,437" />
+    </g>
+    <g id="connector-2">
+      <circle class="fillBlack" cx="302.85" cy="491.5" r="4.5" />
+      <path class="strokeBlack" d="M300.37,489 280.4,469.23 280.4,458.38" />
+    </g>
+    <g id="connector-1">
+      <circle class="fillBlack" cx="371.5" cy="125.5" r="4.5" />
+      <path class="strokeBlack" d="M348.65,167.23 348.65,152.24 370,127.5" />
+    </g>
+  </g>
+
+  <defs>
+    <path id="Q1SHAPE" d="M220,114 220.5,114 221,114 221.5,114 C318.98,114 398,193.02 398,290.5 C398,307.92 395.48,324.75 390.77,340.64 L333.11,323.71 C336.29,313.03 338,301.71477 338,290 C338,224.8304 285.1696,172 220,172 L220,114 Z" />
+
+    <mask id="Q1MASK">
+      <use xlink:href="#Q1SHAPE" fill="white" stroke="black" stroke-width="3" />
+    </mask>
+
+    <path id="Q2SHAPE" d="M390.77,340.64 C371.22,406.76 313.98,456.7 243.93,465.59 L235.91,406.94 C282.26,400.69 320.07,367.53 333.11,323.71 L390.77,340.64 L390.77,340.64 Z" />
+
+    <mask id="Q2MASK">
+      <use xlink:href="#Q2SHAPE" fill="white" stroke="black" stroke-width="3" />
+    </mask>
+
+    <path id="Q3SHAPE" d="M153.16,127.72 L175,180.87 C132.15,198.58 102,240.77 102,290 C102,355.17 154.83,408 220,408 C225.4,408 230.71,407.64 235.91,406.94 L243.93,465.59 C236.58,466.52 229.1,467 221.5,467 C124.02,467 45,387.98 45,290.5 C45,217.25 89.62,154.42 153.16,127.72 L153.16,127.72 Z" />
+
+    <mask id="Q3MASK">
+      <use xlink:href="#Q3SHAPE" fill="white" stroke="black" stroke-width="3" />
+    </mask>
+
+    <path id="Q4SHAPE" d="M153.16,127.72 C173.75,119.06 196.32,114.2 220,114 L220,172 C204.06,172 188.86,175.16 175,180.87 L153.16,127.72 L153.16,127.72 Z" />
+
+    <mask id="Q4MASK">
+      <use xlink:href="#Q4SHAPE" fill="white" stroke="black" stroke-width="3" />
+    </mask>
+  </defs>
+</svg>
