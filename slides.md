@@ -128,7 +128,7 @@ Note:
 <!-- .slide: data-background-image="img/bg/theorie.jpg" -->
 ## De belles spécifications
 
-[ARIA 1.1](https://www.w3.org/TR/wai-aria/) + [SVG 2](https://www.w3.org/TR/SVG2/struct.html#WAIARIAAttributes) + [SVG-AAM 1.0](https://www.w3.org/TR/svg-aam-1.0/) = ❤️
+[ARIA 1.1](https://www.w3.org/TR/wai-aria/) + [ARIA Graphics 1.0](https://www.w3.org/TR/graphics-aria-1.0/) <br>+ [SVG 2](https://www.w3.org/TR/SVG2/struct.html#WAIARIAAttributes) + [SVG-AAM 1.0](https://www.w3.org/TR/svg-aam-1.0/) = ❤️
 
 Note:
 Remerciement à Amelia Bellamy-Royds et Ian Pouncey
@@ -184,9 +184,9 @@ Note:
 <pre><code class="hljs html" data-trim data-line-numbers="3,4,5,7,9">
 &lt;svg viewBox="0 0 440 540"
   xmlns="http://www.w3.org/2000/svg"
+  lang="en" xml:lang="en"
   aria-labelledby="title"
-  aria-discribedby="description"
-  lang="en" xml:lang="en"&gt;
+  aria-discribedby="description"&gt;
 
   &lt;title id="title"&gt;2017 Incomes Chart&lt;/title&gt;
 
@@ -218,11 +218,11 @@ Note:
 <pre><code class="hljs html" data-trim data-line-numbers="3,4,5,7,11-13">
 &lt;svg viewBox="0 0 440 540"
   xmlns="http://www.w3.org/2000/svg"
+  lang="en" xml:lang="en"
   aria-labelledby="title"
-  aria-discribedby="decriptiont"
-  lang="en" xml:lang="en"&gt;
+  aria-discribedby="description"&gt;
 
-  &lt;desc id="decriptiont"&gt; ... &lt;/desc&gt;
+  &lt;desc id="description"&gt; ... &lt;/desc&gt;
 
   &lt;g&gt;
     &lt;rect x="10" y="10" width="420" height="30"&gt;&lt;/rect&gt;
@@ -277,6 +277,8 @@ Note:
 Tester, tester et encore tester…<br>
 et éventuellement tester encore une fois, au cas où !
 <!-- .element: class="fragment" -->
+
+Note: C'est en forgeant qu'on devient forgeron
 
 
 <!-- .slide: data-background-image="img/bg/rising-sun.jpg" -->
