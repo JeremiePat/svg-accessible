@@ -1,5 +1,6 @@
 # SVG Accessible !
 
+![Web Advocat chez Zenika](img/zenika.png) <!-- .element: style="height: 1.5em; vertical-align: middle; background: none; border: none;" -->
 [@JeremiePat](https://twitter.com/JeremiePat) / [JeremiePat.github.io/svg-accessible](https://JeremiePat.github.io/svg-accessible)
 
 ---
