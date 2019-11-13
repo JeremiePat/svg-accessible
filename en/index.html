@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SVG Accessible !</title>
+
+		<link rel="stylesheet" href="../reveal/css/reset.css">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+    <!-- Custom steal tweaking -->
+    <style>
+			body { background: radial-gradient(#404040 0%, #0f0f0f 100%); }
+			.reveal pre { display: inline-block; width: auto; font-size: 0.8em }
+			.reveal pre code { padding: 0.7em; max-height: 900px; }
+      .reveal .slides iframe { width: 800px; height: 500px; }
+			.reveal .hljs[data-line-numbers]:not([data-line-numbers=""]) tr:not(.highlight-line) { opacity: 0.5; }
+			.reveal section img { max-height: 900px; background: white; }
+			.reveal .slides > section > section { width: 60%; margin: 0 20%; }
+			.reveal .slides > section > section.code { width: 100%; margin: 0; }
+			.reveal .slides > section > section.dark { background: radial-gradient(closest-side, rgba(0,0,0,0.75), transparent); box-sizing: border-box; padding: 2em; }
+			.reveal .slides > section > section.darker { background: rgba(0,0,0,0.7); box-sizing: border-box; padding: 2em; border-radius: 0.5em; }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName('head')[0].appendChild(link);
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+          <section data-markdown="slides.md"
+                   data-separator="^\n---\n\n"
+                   data-separator-vertical="^\n\n"
+                   data-separator-notes="^Note:">
+			</div>
+		</div>
+
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        width: 1920,
+        height: 1080,
+
+        hash: true,
+        navigationMode: 'linear',
+
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
