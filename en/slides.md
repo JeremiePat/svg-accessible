@@ -88,10 +88,10 @@ Note:
 
 ## A touch of A11Y for SVG
 
-- Attributs : <!-- .element: class="fragment" -->
+- Attributes : <!-- .element: class="fragment" -->
   - `lang` and `xml:lang`
   - `tabindex`
-- Balises : <!-- .element: class="fragment" -->
+- Tags : <!-- .element: class="fragment" -->
   - `<title>`
   - `<desc>`
   - `<metadata>` 🤔
@@ -291,3 +291,5 @@ and eventually test one more time, just in case!
 <!-- .slide: data-background-image="../img/bg/rising-sun.jpg" -->
 # Thank you
 ## 🤯😘❤️🌈🦄
+
+[@JeremiePat](https://twitter.com/JeremiePat) / [JeremiePat.github.io/svg-accessible/en](https://JeremiePat.github.io/svg-accessible/en)
